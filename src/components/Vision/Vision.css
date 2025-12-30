@@ -1,0 +1,226 @@
+.vision {
+  background: var(--white);
+  position: relative;
+  overflow: hidden;
+}
+
+.vision::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -10%;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(49, 130, 206, 0.1) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.vision-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 50px;
+  position: relative;
+  z-index: 1;
+}
+
+.vision-card,
+.mission-card {
+  background: var(--white);
+  padding: 45px;
+  border-radius: 15px;
+  box-shadow: var(--shadow-lg);
+  border: 2px solid var(--light-gray);
+  transition: var(--transition-normal);
+}
+
+.vision-card:hover,
+.mission-card:hover {
+  border-color: var(--accent-blue);
+  transform: translateY(-5px);
+}
+
+.vision-icon,
+.mission-icon {
+  width: 70px;
+  height: 70px;
+  background: linear-gradient(135deg, var(--primary-blue), var(--accent-blue));
+  color: var(--white);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  margin-bottom: 25px;
+}
+
+.vision-title,
+.mission-title {
+  font-size: 32px;
+  color: var(--primary-blue);
+  margin-bottom: 20px;
+}
+
+.vision-text,
+.mission-intro {
+  font-size: 18px;
+  color: var(--text-light);
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.vision-text strong {
+  color: var(--accent-blue);
+  font-weight: 700;
+}
+
+.vision-tagline {
+  display: inline-block;
+  background: linear-gradient(135deg, var(--primary-blue), var(--accent-blue));
+  color: var(--white);
+  padding: 12px 24px;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 15px;
+}
+
+.mission-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.mission-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.mission-number {
+  width: 35px;
+  height: 35px;
+  background: linear-gradient(135deg, var(--primary-blue), var(--accent-blue));
+  color: var(--white);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 16px;
+  flex-shrink: 0;
+}
+
+.mission-text {
+  font-size: 16px;
+  color: var(--text-dark);
+  line-height: 1.6;
+  padding-top: 5px;
+}
+
+.vision-banner {
+  background: linear-gradient(135deg, var(--primary-blue), var(--primary-blue-light));
+  padding: 50px;
+  border-radius: 15px;
+  box-shadow: var(--shadow-lg);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  position: relative;
+  z-index: 1;
+}
+
+.banner-content h3 {
+  font-size: 28px;
+  color: var(--white);
+  margin-bottom: 15px;
+}
+
+.banner-content p {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.7;
+  max-width: 600px;
+}
+
+.banner-stats {
+  display: flex;
+  gap: 30px;
+}
+
+.banner-stat {
+  text-align: center;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  min-width: 120px;
+}
+
+.stat-value {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: 5px;
+}
+
+.stat-label {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Responsive */
+@media (max-width: 968px) {
+  .vision-content {
+    grid-template-columns: 1fr;
+  }
+
+  .vision-banner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .banner-stats {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .vision-card,
+  .mission-card {
+    padding: 30px 25px;
+  }
+
+  .vision-title,
+  .mission-title {
+    font-size: 26px;
+  }
+
+  .vision-text,
+  .mission-intro {
+    font-size: 16px;
+  }
+
+  .vision-banner {
+    padding: 35px 25px;
+  }
+
+  .banner-content h3 {
+    font-size: 24px;
+  }
+
+  .banner-stats {
+    gap: 15px;
+  }
+
+  .banner-stat {
+    min-width: 100px;
+    padding: 15px;
+  }
+}
+
