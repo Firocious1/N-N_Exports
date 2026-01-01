@@ -91,7 +91,7 @@ const Contact = () => {
                 </div>
                 <div className="method-details">
                   <h4>Email Us</h4>
-                  <a href="mailto:info@nnglobalexports.com">info@nnglobalexports.com</a>
+                  <a href="mailto:nnnglobalexports@gmail.com">nnnglobalexports@gmail.com</a>
                 </div>
               </div>
 
@@ -101,7 +101,7 @@ const Contact = () => {
                 </div>
                 <div className="method-details">
                   <h4>Call Us</h4>
-                  <a href="tel:+919876543210">+91 98765 43210</a>
+                  <a href="tel:+919925554681">+91 9925554681</a>
                 </div>
               </div>
 
@@ -112,7 +112,7 @@ const Contact = () => {
                 <div className="method-details">
                   <h4>WhatsApp</h4>
                   <a href="https://wa.me/919876543210" target="_blank" rel="noopener noreferrer">
-                    +91 98765 43210
+                    +91 9925554681
                   </a>
                 </div>
               </div>
