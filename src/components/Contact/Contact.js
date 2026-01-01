@@ -1,6 +1,13 @@
 import React, { useState } from 'react';
 import './Contact.css';
 import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaWhatsapp, FaLinkedin } from 'react-icons/fa';
+import emailjs from '@emailjs/browser';
+
+// EmailJS Configuration
+// TODO: Replace these with your actual EmailJS credentials
+const EMAILJS_SERVICE_ID = 'service_4d7d8qc';
+const EMAILJS_TEMPLATE_ID = 'template_lisw7vb';
+const EMAILJS_PUBLIC_KEY = 'o6aQmb3HFa6nCovst';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -11,6 +18,8 @@ const Contact = () => {
     message: ''
   });
 
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
   const handleChange = (e) => {
     setFormData({
       ...formData,
@@ -18,17 +27,43 @@ const Contact = () => {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Form submission logic will be implemented when backend is ready
-    alert('Thank you for your interest! We will contact you shortly.');
-    setFormData({
-      name: '',
-      email: '',
-      phone: '',
-      company: '',
-      message: ''
-    });
+    setIsSubmitting(true);
+
+    try {
+      // Send email using EmailJS
+      const result = await emailjs.send(
+        EMAILJS_SERVICE_ID,
+        EMAILJS_TEMPLATE_ID,
+        {
+          from_name: formData.name,
+          from_email: formData.email,
+          phone: formData.phone,
+          company: formData.company || 'Not provided',
+          message: formData.message,
+          to_email: 'nnnglobalexports@gmail.com'
+        },
+        EMAILJS_PUBLIC_KEY
+      );
+
+      console.log('Email sent successfully:', result.text);
+      alert('✅ Thank you for your interest! We will contact you shortly.');
+      
+      // Clear form after successful submission
+      setFormData({
+        name: '',
+        email: '',
+        phone: '',
+        company: '',
+        message: ''
+      });
+    } catch (error) {
+      console.error('Email sending failed:', error);
+      alert('❌ Sorry, there was an error sending your message. Please try again or contact us directly at nnnglobalexports@gmail.com');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -176,8 +211,8 @@ const Contact = () => {
                 ></textarea>
               </div>
 
-              <button type="submit" className="submit-btn">
-                Send Message
+              <button type="submit" className="submit-btn" disabled={isSubmitting}>
+                {isSubmitting ? 'Sending...' : 'Send Message'}
               </button>
             </form>
           </div>

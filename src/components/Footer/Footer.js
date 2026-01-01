@@ -59,11 +59,11 @@ const Footer = () => {
             <ul className="footer-contact">
               <li>
                 <FaEnvelope />
-                <a href="mailto:info@nnglobalexports.com">info@nnglobalexports.com</a>
+                <a href="mailto:nnnglobalexports@gmail.com">nnnglobalexports@gmail.com</a>
               </li>
               <li>
                 <FaPhone />
-                <a href="tel:+919876543210">+91 98765 43210</a>
+                <a href="tel:+919925554681">+91 9925554681</a>
               </li>
               <li>
                 <FaMapMarkerAlt />

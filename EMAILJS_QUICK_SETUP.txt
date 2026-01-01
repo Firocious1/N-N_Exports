@@ -1,0 +1,68 @@
+╔════════════════════════════════════════════════════════════════╗
+║         📧 EMAILJS QUICK SETUP - DO THIS NOW!                  ║
+╚════════════════════════════════════════════════════════════════╝
+
+🔗 STEP 1: Go to https://www.emailjs.com/
+   - Sign up with nnnglobalexports@gmail.com
+
+🔗 STEP 2: Add Gmail Service
+   - Click "Email Services" → "Add New Service" → Choose "Gmail"
+   - Connect nnnglobalexports@gmail.com
+   - ⚠️ COPY & SAVE: Service ID (looks like: service_abc1234)
+
+🔗 STEP 3: Create Email Template
+   - Click "Email Templates" → "Create New Template"
+   
+   Subject: New Inquiry from {{from_name}} - N&N Global Exports Website
+   
+   Body:
+   -----------------------------------------
+   New Contact Form Submission
+
+   From: {{from_name}}
+   Email: {{from_email}}
+   Phone: {{phone}}
+   Company: {{company}}
+
+   Message:
+   {{message}}
+
+   ---
+   Submitted via N&N Global Exports website
+   -----------------------------------------
+   
+   - ⚠️ COPY & SAVE: Template ID (looks like: template_xyz5678)
+
+🔗 STEP 4: Get Public Key
+   - Click "Account" → Find "API Keys" section
+   - ⚠️ COPY & SAVE: Public Key (looks like: abcXYZ123_456xyz)
+
+💻 STEP 5: Update Your Code
+   - Open: src/components/Contact/Contact.js
+   - Find lines 8-10 (around top of file)
+   - Replace:
+     const EMAILJS_SERVICE_ID = 'YOUR_SERVICE_ID';
+     const EMAILJS_TEMPLATE_ID = 'YOUR_TEMPLATE_ID';
+     const EMAILJS_PUBLIC_KEY = 'YOUR_PUBLIC_KEY';
+   
+   - With your actual IDs from steps 2, 3, 4
+
+📦 STEP 6: Install & Run
+   npm install
+   npm start
+
+🧪 STEP 7: Test!
+   - Fill out the contact form
+   - Check nnnglobalexports@gmail.com
+
+✅ DONE! Your form now works!
+
+═══════════════════════════════════════════════════════════════════
+
+💡 NOTES:
+- Free plan: 200 emails/month (plenty to start!)
+- Detailed guide: See EMAILJS_SETUP_GUIDE.md
+- Need help? Check the guide or ask me!
+
+═══════════════════════════════════════════════════════════════════
+
