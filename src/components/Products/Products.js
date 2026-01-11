@@ -9,6 +9,8 @@ import guarGum from '../../assets/guar-protein-1.jpg';
 import multaniMitti from '../../assets/multani mitti.webp';
 import marbleIdols from '../../assets/marble-idols.jpg';
 import onionPowder from '../../assets/onion powder.jpg';
+import officeStationery from '../../assets/office-stationery.jpg';
+import customOrder from '../../assets/custom-order.webp';
 
 const Products = () => {
   const mainProducts = [
@@ -89,6 +91,7 @@ const Products = () => {
   const additionalServices = [
     {
       icon: <FaPencilAlt />,
+      image: officeStationery,
       title: 'Office Stationery',
       description: 'Comprehensive range of high-quality office stationery products suitable for businesses, educational institutions, and organizations worldwide.',
       features: [
@@ -100,6 +103,7 @@ const Products = () => {
     },
     {
       icon: <FaBoxOpen />,
+      image: customOrder,
       title: 'Custom Export Orders',
       description: 'Tailored export solutions to meet your specific requirements. We handle custom orders with the same commitment to quality and timely delivery.',
       features: [
@@ -158,9 +162,15 @@ const Products = () => {
           <div className="services-grid">
             {additionalServices.map((service, index) => (
               <div key={index} className="product-card">
-                <div className="product-icon">
-                  {service.icon}
-                </div>
+                {service.image ? (
+                  <div className="product-image">
+                    <img src={service.image} alt={service.title} />
+                  </div>
+                ) : (
+                  <div className="product-icon">
+                    {service.icon}
+                  </div>
+                )}
                 <h3 className="product-title">{service.title}</h3>
                 <p className="product-description">{service.description}</p>
                 <ul className="product-features">
@@ -169,11 +179,11 @@ const Products = () => {
                   ))}
                 </ul>
                 <button 
-                className="product-btn"
-                onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
-              >
-                Inquire Now
-              </button>
+                  className="product-btn"
+                  onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+                >
+                  Inquire Now
+                </button>
               </div>
             ))}
           </div>
