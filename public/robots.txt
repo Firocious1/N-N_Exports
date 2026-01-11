@@ -1,0 +1,27 @@
+# Robots.txt for N&N Global Exports
+# https://nnnglobalexports.com/robots.txt
+
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /admin/
+
+# Sitemap
+Sitemap: https://nnnglobalexports.com/sitemap.xml
+
+# Search Engine Specific Bots
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+# Crawl Delay (optional)
+Crawl-delay: 1
+
