@@ -1,18 +1,73 @@
 import React from 'react';
 import './Products.css';
-import { FaSeedling, FaPencilAlt, FaBoxOpen } from 'react-icons/fa';
+import { FaSeedling, FaPencilAlt, FaBoxOpen, FaLeaf, FaRecycle, FaMortarPestle, FaSpa, FaMonument } from 'react-icons/fa';
 
 const Products = () => {
   const products = [
     {
-      icon: <FaSeedling />,
-      title: 'Fresh Red Onion',
-      description: 'Premium quality fresh red onions sourced directly from trusted farmers. Carefully selected, graded, and packaged to maintain freshness during international transit.',
+      icon: <FaLeaf />,
+      title: 'Moringa Powder & Food Supplements',
+      description: 'Premium quality Moringa powder and other natural food supplements. Rich in nutrients and sourced from organic farms to ensure maximum health benefits.',
       features: [
-        'Direct farm sourcing',
-        'Quality graded',
-        'Export-ready packaging',
-        'Competitive pricing'
+        '100% Natural & Organic',
+        'Rich in vitamins & minerals',
+        'Export quality standards',
+        'Custom packaging available'
+      ]
+    },
+    {
+      icon: <FaRecycle />,
+      title: 'Organic Compost',
+      description: 'High-grade organic compost made from natural materials. Perfect for agriculture and gardening, enhancing soil fertility and promoting sustainable farming.',
+      features: [
+        'Eco-friendly production',
+        'Nutrient-rich formula',
+        'Bulk quantities available',
+        'International shipping'
+      ]
+    },
+    {
+      icon: <FaMortarPestle />,
+      title: 'Guar Gum Powder',
+      description: 'Premium Guar Gum powder for industrial and food applications. Sourced from high-quality guar beans with excellent thickening and stabilizing properties.',
+      features: [
+        'Food & industrial grade',
+        'High viscosity',
+        'Quality tested',
+        'Various mesh sizes'
+      ]
+    },
+    {
+      icon: <FaSpa />,
+      title: 'Multani Mitti (Fuller\'s Earth)',
+      description: 'Pure Multani Mitti clay powder, ideal for cosmetic and industrial applications. Known for its natural cleansing and purifying properties.',
+      features: [
+        'Natural & pure',
+        'Cosmetic grade quality',
+        'Finely processed',
+        'Export certified'
+      ]
+    },
+    {
+      icon: <FaMonument />,
+      title: 'Pure Marble Monuments',
+      description: 'Exquisite marble monuments and sculptures crafted from premium Indian marble. Custom designs available for memorials, statues, and architectural elements.',
+      features: [
+        'Premium marble quality',
+        'Custom designs',
+        'Expert craftsmanship',
+        'Secure packaging & shipping'
+      ]
+    },
+    {
+      icon: <FaSeedling />,
+      title: 'Onion Powder',
+      description: 'Premium dehydrated onion powder made from fresh red onions. Ideal for food processing, seasoning, and culinary applications worldwide.',
+      features: [
+        'Fresh onion sourced',
+        'Low moisture content',
+        'Long shelf life',
+        'Food safety certified'
       ]
     },
     {
