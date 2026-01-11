@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Navbar.css';
+import logo from '../../assets/NN-logo.jpg';
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -26,8 +27,11 @@ const Navbar = () => {
     <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
       <div className="navbar-container">
         <div className="navbar-logo" onClick={() => scrollToSection('hero')}>
-          <span className="logo-text">N&N</span>
-          <span className="logo-subtitle">Global Exports</span>
+          <img src={logo} alt="N&N Global Exports Logo" className="logo-image" />
+          <div className="logo-text-container">
+            <span className="logo-text">N&N</span>
+            <span className="logo-subtitle">Global Exports</span>
+          </div>
         </div>
 
         <div className={`navbar-menu ${mobileMenuOpen ? 'active' : ''}`}>
