@@ -142,7 +142,12 @@ const Products = () => {
                   <li key={idx}>{feature}</li>
                 ))}
               </ul>
-              <button className="product-btn">Learn More</button>
+              <button 
+                className="product-btn"
+                onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+              >
+                Inquire Now
+              </button>
             </div>
           ))}
         </div>
@@ -163,7 +168,12 @@ const Products = () => {
                     <li key={idx}>{feature}</li>
                   ))}
                 </ul>
-                <button className="product-btn">Learn More</button>
+                <button 
+                className="product-btn"
+                onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+              >
+                Inquire Now
+              </button>
               </div>
             ))}
           </div>
