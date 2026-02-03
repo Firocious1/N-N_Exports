@@ -49,7 +49,7 @@ const Contact = () => {
 
       console.log('Email sent successfully:', result.text);
       alert('✅ Thank you for your interest! We will contact you shortly.');
-      
+
       // Clear form after successful submission
       setFormData({
         name: '',
@@ -60,7 +60,7 @@ const Contact = () => {
       });
     } catch (error) {
       console.error('Email sending failed:', error);
-      alert('❌ Sorry, there was an error sending your message. Please try again or contact us directly at nnnglobalexports@gmail.com');
+      alert('❌ Sorry, there was an error sending your message. Please try again or contact us directly at info@nnnglobalexports.com');
     } finally {
       setIsSubmitting(false);
     }
@@ -91,7 +91,7 @@ const Contact = () => {
                 </div>
                 <div className="method-details">
                   <h4>Email Us</h4>
-                  <a href="mailto:nnnglobalexports@gmail.com">nnnglobalexports@gmail.com</a>
+                  <a href="mailto:info@nnglobalexports.com">info@nnglobalexports.com</a>
                 </div>
               </div>
 
