@@ -25,10 +25,10 @@ const Footer = () => {
               Connecting India to the world with excellence.
             </p>
             <div className="footer-social">
-              <a href="#" className="social-link" aria-label="LinkedIn">
+              <a href="https://www.linkedin.com" className="social-link" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
                 <FaLinkedin />
               </a>
-              <a href="https://wa.me/919876543210" className="social-link" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/919925554681" className="social-link" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer">
                 <FaWhatsapp />
               </a>
             </div>
@@ -37,20 +37,20 @@ const Footer = () => {
           <div className="footer-section">
             <h4 className="footer-title">Quick Links</h4>
             <ul className="footer-links">
-              <li><a onClick={() => scrollToSection('about')}>About Us</a></li>
-              <li><a onClick={() => scrollToSection('products')}>Our Products</a></li>
-              <li><a onClick={() => scrollToSection('strengths')}>Why Choose Us</a></li>
-              <li><a onClick={() => scrollToSection('vision')}>Vision & Mission</a></li>
-              <li><a onClick={() => scrollToSection('contact')}>Contact</a></li>
+              <li><button onClick={() => scrollToSection('about')}>About Us</button></li>
+              <li><button onClick={() => scrollToSection('products')}>Our Products</button></li>
+              <li><button onClick={() => scrollToSection('strengths')}>Why Choose Us</button></li>
+              <li><button onClick={() => scrollToSection('vision')}>Vision & Mission</button></li>
+              <li><button onClick={() => scrollToSection('contact')}>Contact</button></li>
             </ul>
           </div>
 
           <div className="footer-section">
             <h4 className="footer-title">Our Products</h4>
             <ul className="footer-links">
-              <li><a>Fresh Red Onion</a></li>
-              <li><a>Office Stationery</a></li>
-              <li><a>Custom Export Orders</a></li>
+              <li><span>Fresh Red Onion</span></li>
+              <li><span>Office Stationery</span></li>
+              <li><span>Custom Export Orders</span></li>
             </ul>
           </div>
 

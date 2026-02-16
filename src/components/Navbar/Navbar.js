@@ -35,12 +35,12 @@ const Navbar = () => {
         </div>
 
         <div className={`navbar-menu ${mobileMenuOpen ? 'active' : ''}`}>
-          <a onClick={() => scrollToSection('hero')} className="nav-link">Home</a>
-          <a onClick={() => scrollToSection('about')} className="nav-link">About</a>
-          <a onClick={() => scrollToSection('products')} className="nav-link">Products</a>
-          <a onClick={() => scrollToSection('strengths')} className="nav-link">Why Choose Us</a>
-          <a onClick={() => scrollToSection('vision')} className="nav-link">Vision</a>
-          <a onClick={() => scrollToSection('contact')} className="nav-link nav-link-cta">Contact Us</a>
+          <button onClick={() => scrollToSection('hero')} className="nav-link">Home</button>
+          <button onClick={() => scrollToSection('about')} className="nav-link">About</button>
+          <button onClick={() => scrollToSection('products')} className="nav-link">Products</button>
+          <button onClick={() => scrollToSection('strengths')} className="nav-link">Why Choose Us</button>
+          <button onClick={() => scrollToSection('vision')} className="nav-link">Vision</button>
+          <button onClick={() => scrollToSection('contact')} className="nav-link nav-link-cta">Contact Us</button>
         </div>
 
         <button 

@@ -131,10 +131,10 @@ const Contact = () => {
             <div className="social-links">
               <h4>Follow Us</h4>
               <div className="social-icons">
-                <a href="#" className="social-icon" aria-label="LinkedIn">
+                <a href="https://www.linkedin.com" className="social-icon" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
                   <FaLinkedin />
                 </a>
-                <a href="#" className="social-icon" aria-label="WhatsApp">
+                <a href="https://wa.me/919925554681" className="social-icon" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer">
                   <FaWhatsapp />
                 </a>
               </div>
