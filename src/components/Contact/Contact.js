@@ -101,7 +101,7 @@ const Contact = () => {
                 </div>
                 <div className="method-details">
                   <h4>Call Us</h4>
-                  <a href="tel:+919925554681">+91 9925554681</a>
+                  <a href="tel:+919099957541">+91 9099957541</a>
                 </div>
               </div>
 
@@ -111,8 +111,8 @@ const Contact = () => {
                 </div>
                 <div className="method-details">
                   <h4>WhatsApp</h4>
-                  <a href="https://wa.me/919876543210" target="_blank" rel="noopener noreferrer">
-                    +91 9925554681
+                  <a href="https://wa.me/919099957541" target="_blank" rel="noopener noreferrer">
+                    +91 9099957541
                   </a>
                 </div>
               </div>
@@ -134,7 +134,7 @@ const Contact = () => {
                 <a href="https://www.linkedin.com" className="social-icon" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
                   <FaLinkedin />
                 </a>
-                <a href="https://wa.me/919925554681" className="social-icon" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer">
+                <a href="https://wa.me/919099957541" className="social-icon" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer">
                   <FaWhatsapp />
                 </a>
               </div>
