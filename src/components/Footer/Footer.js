@@ -42,7 +42,7 @@ const Footer = () => {
                 <FaLinkedin />
               </a>
               <a
-                href="https://wa.me/919925554681"
+                href="https://wa.me/919099957541"
                 className="social-link"
                 aria-label="WhatsApp"
                 target="_blank"
@@ -110,7 +110,7 @@ const Footer = () => {
               </li>
               <li>
                 <FaPhone />
-                <a href="tel:+919925554681">+91 9925554681</a>
+                <a href="tel:+919099957541">+91 9099957541</a>
               </li>
               <li>
                 <FaMapMarkerAlt />
