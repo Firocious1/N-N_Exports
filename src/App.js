@@ -8,6 +8,7 @@ import Strengths from './components/Strengths/Strengths';
 import Vision from './components/Vision/Vision';
 import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
+import { Analytics } from '@vercel/analytics/react';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <Vision />
       <Contact />
       <Footer />
+      <Analytics />
     </div>
   );
 }
